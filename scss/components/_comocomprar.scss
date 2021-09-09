@@ -1,0 +1,22 @@
+@import '../base/mixins';
+@import '../base/listas';
+@import '../base/variables';
+
+/*Como Comprar*/
+
+
+
+.como-comprar {
+    @include disposicion(flex, center, center);
+    margin: 80px 100px;
+    padding: $padding;
+    gap: 10%;
+
+    h2 {
+        color: nth($colores, 3);
+    }
+
+    @media only screen and (max-width: 960px) {
+        flex-direction: column;
+    }
+}

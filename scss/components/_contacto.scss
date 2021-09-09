@@ -1,0 +1,41 @@
+@import '../base/listas';
+/* Contacto Formulario + Modal */
+
+.contacto {
+    margin: 8% 20%;
+    font-family: nth($fonts, 2);
+
+    .container-form {
+        margin: 80px auto;
+        background-image: url('../images/contactoimg.jpg');
+        background-size: cover;
+
+        label {
+            background-color: #fedbd7;
+            color: nth($colores, 3);
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        background-color: #fedbd7;
+        color: nth($colores, 3);
+
+        &:hover {
+            background-color: nth($colores, 3);
+            color: rgba(254, 219, 215);
+        }
+    }
+
+    .modal-body {
+        color: nth($colores, 3);
+    }
+
+    .modal-header {
+        color: nth($colores, 3);
+    }
+
+}

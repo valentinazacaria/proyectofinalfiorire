@@ -1,0 +1,98 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mixins';
+
+/*Titulo Marca*/
+
+.titulo {
+    background-color: transparent;
+    color: nth($colores, 3);
+    text-align: center;
+    position: absolute;
+    left: 45.5%;
+    top: 15%;
+    z-index: 5;
+    animation-duration: 2s;
+    animation-name: mostrar;
+    font-family: nth($fonts, 2);
+
+    &:hover {
+        color: nth($colores, 2);
+    }
+
+    @keyframes mostrar {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0.25;
+        }
+
+        50% {
+            color: nth($colores, 3);
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.75;
+        }
+
+        100% {
+            color: nth($colores, 2);
+            opacity: 1;
+        }
+    }
+
+    @media only screen and (max-width: 960px) {
+        .titulo {
+            display: none;
+        }
+    }
+}
+
+
+
+/*Menu Principal*/
+.menu {
+    @include disposicion(flex, space-between, center);
+    background-color: nth($colores, 9);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: $ancho;
+    font-family: nth($fonts, 2);
+    letter-spacing: 1px;
+
+    /*Logo*/
+    img {
+        width: $ancho - 88;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        padding: $padding / 10;
+        font-size: 17px;
+    }
+
+    a {
+        color: nth($colores, 2);
+
+
+        &:hover {
+            color: nth($colores, 5);
+        }
+    }
+}
+
+/*Carousel*/
+.container-carousel {
+    margin-top: 6%;
+}

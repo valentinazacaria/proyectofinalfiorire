@@ -1,0 +1,57 @@
+@import 'components/header';
+@import 'components/footer';
+@import 'components/productosdestacados';
+@import 'components/nosotros';
+@import 'components/productos';
+@import 'components/contacto';
+@import 'components/locales';
+@import 'components/comocomprar';
+@import 'base/listas';
+@import 'base/variables';
+@import 'base/mixins';
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Alice&family=Bebas+Neue&family=Montserrat&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bg-body;
+    font-family: 'Montserrat', sans-serif;
+    color: nth($colores, 1);
+}
+
+/* Enlaces*/
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: nth($colores, 5);
+}
+
+a:visited {
+    color: nth($colores, 4);
+}
+
+/*Títulos*/
+.subtitulos {
+    color: nth($colores, 3);
+    text-align: center;
+    font-family: nth($fonts, 2);
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+/*Padding Html*/
+.section-productos,
+.nuestros-locales,
+.como-comprar {
+    padding-top: 10%;
+}

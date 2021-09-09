@@ -1,0 +1,45 @@
+@import '../base/listas';
+@import '../base/variables';
+/*Footer*/
+
+
+.footer {
+    background-image: url('../images/img-footer.jpg');
+    background-size: cover;
+    color: nth($colores, 1);
+    text-align: end;
+    padding: $padding / 2;
+    border-top: solid 1px nth($colores, 4);
+
+    .container-enlaces {
+        display: flex;
+        justify-content: space-between;
+
+
+        a {
+            padding: $padding / 8;
+            color: nth($colores, 1);
+
+            &:hover {
+                color: nth($colores, 5);
+            }
+        }
+
+        .iconos-redes {
+            align-items: center;
+            padding: $padding / 10;
+            
+            img {
+                width: $ancho / 6;
+                height: $alto - 5;
+                border-radius: 50%;
+                
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 0.7s ease-out;
+                    box-shadow: 7px 9px 5px -3px rgba(214, 133, 141, 0.3);
+                }
+            }
+        }
+    }
+}

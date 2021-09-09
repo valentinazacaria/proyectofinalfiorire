@@ -1,0 +1,5 @@
+@mixin disposicion($display, $justify-ct, $align-it) {
+    display: $display;
+    justify-content: $justify-ct;
+    align-items: $align-it;
+}

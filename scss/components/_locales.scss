@@ -1,0 +1,33 @@
+@import '../base/listas';
+@import '../base/variables';
+@import '../base/mixins';
+
+/*Locales*/
+.locales {
+    @include disposicion(flex, space-evenly, center);
+    background-image: url('../images/locales.jpg');
+    background-size: cover;
+    margin: 100px;
+    padding: $padding $padding - 100;
+
+    .direcciones {
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+        padding: $padding / 5;
+
+        .direccion1 {
+            background-color: nth($colores, 10);
+            padding: 35px;
+        }
+
+        .direccion2 {
+            background-color: nth($colores, 10);
+            padding: 35px;
+        }
+    }
+    @media only screen and (max-width: 960px) {
+        flex-direction: column;
+    }
+
+}

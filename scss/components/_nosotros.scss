@@ -1,0 +1,32 @@
+@import '../base/mixins';
+
+/* Nosotros */
+
+#nosotros {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6%;
+
+    .container-nosotros {
+        @include disposicion(flex, center, center);
+        margin: 80px;
+        padding: 25px 0;
+        gap: 50px;
+
+        img {
+            width: 25%;
+        }
+
+        .parrafo-nosotros {
+            color: #520d40;
+            text-align: center;
+            width: 40%;
+            font-style: oblique;
+        }
+
+        @media only screen and (max-width: 960px) {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    }
+}
