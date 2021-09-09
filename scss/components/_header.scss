@@ -88,6 +88,7 @@
 
         &:hover {
             color: nth($colores, 5);
+            background-color: nth($colores, 2);
         }
     }
 }
