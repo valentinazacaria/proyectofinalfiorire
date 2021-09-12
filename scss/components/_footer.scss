@@ -8,6 +8,8 @@
     background-size: cover;
     color: nth($colores, 1);
     text-align: end;
+    font-family: nth($fonts, 2);
+    letter-spacing: 1px;
     padding: $padding / 2;
     border-top: solid 1px nth($colores, 4);
 

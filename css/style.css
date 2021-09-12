@@ -90,6 +90,8 @@
   background-size: cover;
   color: #520d40;
   text-align: end;
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
   padding: 50px;
   border-top: solid 1px #CC6670;
 }
@@ -134,6 +136,7 @@
 .section-destacados .container-destacados .producto-destacado {
   margin: 10px;
   text-align: center;
+  font-family: "Bebas Neue";
   display: flex;
   flex-direction: column;
   justify-content: space-around;
