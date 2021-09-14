@@ -6,7 +6,7 @@
   color: #b23a48;
   text-align: center;
   position: absolute;
-  left: 45.5%;
+  left: 46.5%;
   top: 15%;
   z-index: 5;
   animation-duration: 2s;
@@ -21,18 +21,18 @@
     opacity: 0;
   }
   25% {
-    opacity: 0.25;
+    opacity: 0.5;
   }
   50% {
     color: #b23a48;
-    opacity: 0.5;
+    opacity: 1;
   }
   75% {
-    opacity: 0.75;
+    opacity: 1.5;
   }
   100% {
     color: #520d40c5;
-    opacity: 1;
+    opacity: 2;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -119,7 +119,6 @@
 .footer .container-enlaces .iconos-redes .icon:hover {
   transform: scale(1.2);
   transition: 0.7s ease-out;
-  box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.25);
 }
 
 /* Productos Destacados */
