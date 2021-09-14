@@ -4,16 +4,33 @@
 
 /*Como Comprar*/
 
-
-
 .como-comprar {
     @include disposicion(flex, center, center);
     margin: 80px 100px;
     padding: $padding;
     gap: 10%;
+    text-align: center;
+
+    p {
+        color: nth($colores, 4);
+    }
 
     h2 {
         color: nth($colores, 3);
+    }
+
+    .envios {
+        text-align: start;
+        color: nth($colores, 4);
+
+        i {
+            font-size: 20px;
+            color: nth($colores, 1);
+        }
+    }
+
+    .icon-pay {
+        font-size: 40px;
     }
 
     @media only screen and (max-width: 960px) {
