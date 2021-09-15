@@ -110,8 +110,17 @@
   align-items: center;
   padding: 10px;
 }
-.footer .container-enlaces .iconos-redes :nth-child(4) {
+.footer .container-enlaces .iconos-redes a:nth-child(4) {
   color: #00bb2d;
+}
+.footer .container-enlaces .iconos-redes a:nth-child(3) {
+  color: #010101;
+}
+.footer .container-enlaces .iconos-redes a:nth-child(2) {
+  color: #3b5998;
+}
+.footer .container-enlaces .iconos-redes a:nth-child(1) {
+  color: #dd2a7b;
 }
 .footer .container-enlaces .iconos-redes .icon {
   font-size: 1.5rem;
