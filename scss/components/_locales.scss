@@ -10,6 +10,19 @@
     margin: 100px;
     padding: $padding $padding - 100;
 
+    iframe {
+        border-radius: 10%;
+        opacity: 0.8;
+
+        &:hover{
+            opacity:1;
+        }
+
+        @media only screen and (max-width: 960px) {
+            display: none;
+        }
+    }
+
     .direcciones {
         display: flex;
         flex-direction: column;

@@ -318,6 +318,18 @@
   margin: 100px;
   padding: 100px 0px;
 }
+.locales iframe {
+  border-radius: 10%;
+  opacity: 0.8;
+}
+.locales iframe:hover {
+  opacity: 1;
+}
+@media only screen and (max-width: 960px) {
+  .locales iframe {
+    display: none;
+  }
+}
 .locales .direcciones {
   display: flex;
   flex-direction: column;
