@@ -7,6 +7,13 @@
     flex-direction: column;
     padding-top: 6%;
 
+    .sobre-nosotros{
+        color: nth($colores, 3);
+        margin: 0 80px 0 80px;
+        border: solid 2px nth($colores, 6);
+        background-color: nth($colores, 9);
+    }
+
     .container-nosotros {
         @include disposicion(flex, center, center);
         margin: 80px;
@@ -18,7 +25,7 @@
         }
 
         .parrafo-nosotros {
-            color: #520d40;
+            color: nth($colores, 3);
             text-align: center;
             width: 40%;
             font-style: oblique;

@@ -20,24 +20,22 @@ $producto: (
     grid-template-columns: repeat(3, 1fr);
     gap: 130px 50px;
     letter-spacing: 1px;
-
+    
     .grid-item-producto {
         background-color: nth($colores, 9);
         box-shadow: map-get($producto, shadow-fija);
-        padding: 20px 20px 50px 20px;
-
+        padding-bottom: 50px;
+        border-radius: 3%;
+        
         &:hover {
             box-shadow: map-get($producto, shadow-hover);
         }
-
+        
         img {
             width: $ancho;
             height: $ancho - 20;
             object-fit: cover;
-
-            &:hover {
-                opacity: map-get($producto, hover);
-            }
+            border-radius: 3% 3% 0 0;
         }
 
         .button-bag {
@@ -56,18 +54,15 @@ $producto: (
             }
 
             button {
+                color: nth($colores, 1);
                 background-color: transparent;
-                border-radius: 30%;
                 margin: 10px;
                 padding: 6px;
                 border: none;
+                font-size: 17px;
 
                 &:active {
-                    background-color: nth($colores, 7);
-                }
-
-                img {
-                    object-fit: contain;
+                    color: nth($colores, 4);
                 }
             }
         }

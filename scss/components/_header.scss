@@ -10,10 +10,9 @@
     text-align: center;
     position: absolute;
     left: 46.5%;
-    top: 15%;
+    top: 20%;
     z-index: 5;
-    animation-duration: 2s;
-    animation-name: mostrar;
+    animation: mostrar 5s infinite;
     font-family: nth($fonts, 2);
 
     &:hover {
@@ -22,30 +21,22 @@
 
     @keyframes mostrar {
         0% {
-            opacity: 0;
-        }
-
-        25% {
-            opacity: 0.50;
+            opacity: 0.75;
         }
 
         50% {
             color: nth($colores, 3);
-            opacity: 1;
-        }
-
-        75% {
-            opacity: 1.50;
+            opacity: 1.5;
         }
 
         100% {
             color: nth($colores, 2);
-            opacity: 2;
+            opacity: 0.75;
         }
     }
 
     @media only screen and (max-width: 960px) {
-            display: none;
+        display: none;
     }
 }
 
@@ -81,7 +72,7 @@
     }
 
     a {
-        color: nth($colores, 2);
+        color: nth($colores, 3);
 
 
         &:hover {
@@ -93,7 +84,43 @@
     }
 }
 
-/*Carousel*/
-.container-carousel {
+.cuotas {
+    color: nth($colores, 8);
+    background-color: nth($colores, 1);
+    text-align: center;
     margin-top: 6%;
+    animation: cuotas 7s infinite;
+
+    p {
+        margin: 0;
+        font-family: nth($fonts, 2);
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    @keyframes cuotas {
+        0% {
+            opacity: 0.50;
+        }
+
+        25% {
+            opacity: 1;
+        }
+
+        50% {
+            background-color: nth($colores, 4);
+            opacity: 1.50;
+        }
+
+        75% {
+            opacity: 1;
+        }
+
+        100% {
+            color: nth($colores, 8);
+            background-color: nth($colores, 1);
+            opacity: 0.50;
+        }
 }
+}
+/*Carousel*/

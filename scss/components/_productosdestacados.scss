@@ -6,6 +6,12 @@
     justify-content: center;
     margin: 80px 80px 0 80px;
 
+    h2{
+        color: nth($colores, 3);
+        border: solid 2px nth($colores, 6);
+        background-color: nth($colores, 9);
+    }
+
 
     .container-destacados {
         margin-top: 80px;
@@ -34,7 +40,7 @@
             }
 
             .text-destacados {
-                color: #520d40c5;
+                color: nth($colores, 3);
                 margin: 20px;
 
                 h3 {
