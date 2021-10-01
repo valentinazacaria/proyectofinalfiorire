@@ -41,11 +41,14 @@ a:visited {
 
 /*Títulos*/
 .subtitulos {
+    margin: 0 80px 0 80px;
     color: nth($colores, 3);
     text-align: center;
     font-family: nth($fonts, 2);
     font-weight: 500;
     font-size: 30px;
+    border: solid 2px nth($colores, 6);
+    background-color: nth($colores, 9);
 }
 
 

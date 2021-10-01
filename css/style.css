@@ -111,7 +111,7 @@
 .footer {
   background-image: url("../images/img-footer.jpg");
   background-size: cover;
-  color: #520d40;
+  color: #520d40c5;
   text-align: end;
   font-family: "Bebas Neue";
   letter-spacing: 1px;
@@ -122,16 +122,21 @@
   display: flex;
   justify-content: space-between;
 }
-.footer .container-enlaces a {
+.footer .container-enlaces .enlaces-footer a {
   padding: 12.5px;
-  color: #520d40;
+  color: #520d40c5;
 }
-.footer .container-enlaces a:hover {
-  color: #d6858d;
+.footer .container-enlaces .enlaces-footer a:hover {
+  color: #b23a48;
+  border-bottom: solid 2px #520d40;
+  padding-bottom: 2px;
 }
 .footer .container-enlaces .iconos-redes {
-  align-items: center;
   padding: 10px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
 }
 .footer .container-enlaces .iconos-redes a:nth-child(4) {
   color: #00bb2d;
@@ -159,11 +164,6 @@
   flex-direction: column;
   justify-content: center;
   margin: 80px 80px 0 80px;
-}
-.section-destacados h2 {
-  color: #b23a48;
-  border: solid 2px #dd9aa0;
-  background-color: rgba(254, 219, 215, 0.5);
 }
 .section-destacados .container-destacados {
   margin-top: 80px;
@@ -212,12 +212,6 @@
   flex-direction: column;
   padding-top: 6%;
 }
-#nosotros .sobre-nosotros {
-  color: #b23a48;
-  margin: 0 80px 0 80px;
-  border: solid 2px #dd9aa0;
-  background-color: rgba(254, 219, 215, 0.5);
-}
 #nosotros .container-nosotros {
   display: flex;
   justify-content: center;
@@ -244,13 +238,12 @@
 
 /*Productos*/
 .grid-container-productos {
-  margin: 80px 100px;
-  padding-bottom: 100px;
+  margin: 100px 200px;
   width: auto;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  gap: 130px 50px;
+  gap: 0 30px;
   letter-spacing: 1px;
 }
 .grid-container-productos .grid-item-producto {
@@ -258,13 +251,14 @@
   box-shadow: 7px 9px 5px -3px rgba(214, 133, 141, 0.51);
   padding-bottom: 50px;
   border-radius: 3%;
+  height: 70%;
 }
 .grid-container-productos .grid-item-producto:hover {
   box-shadow: 7px 9px 5px -3px rgba(124, 82, 86, 0.51);
 }
 .grid-container-productos .grid-item-producto img {
   width: 100%;
-  height: 80%;
+  height: 75%;
   object-fit: cover;
   border-radius: 3% 3% 0 0;
 }
@@ -296,14 +290,15 @@
 }
 @media only screen and (max-width: 960px) {
   .grid-container-productos .grid-item-producto {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 }
 @media only screen and (max-width: 960px) {
   .grid-container-productos {
     display: flex;
     flex-direction: column;
-    margin: 0 15px;
+    margin: 50px 50px;
+    gap: 80px;
   }
 }
 
@@ -341,13 +336,13 @@
 
 /*Locales*/
 .locales {
+  background-image: url("../images/locales.jpg");
+  background-size: cover;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url("../images/locales.jpg");
-  background-size: cover;
   margin: 100px;
-  padding: 100px 0px;
+  padding: 100px 0;
 }
 .locales iframe {
   border-radius: 10%;
@@ -442,11 +437,14 @@ a:visited {
 
 /*Títulos*/
 .subtitulos {
+  margin: 0 80px 0 80px;
   color: #b23a48;
   text-align: center;
   font-family: "Bebas Neue";
   font-weight: 500;
   font-size: 30px;
+  border: solid 2px #dd9aa0;
+  background-color: rgba(254, 219, 215, 0.5);
 }
 
 /*Padding Html*/

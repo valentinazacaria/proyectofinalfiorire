@@ -6,50 +6,56 @@
 .footer {
     background-image: url('../images/img-footer.jpg');
     background-size: cover;
-    color: nth($colores, 1);
+    color: nth($colores, 2);
     text-align: end;
     font-family: nth($fonts, 2);
     letter-spacing: 1px;
-    padding: $padding / 2;
+    padding: 50px;
     border-top: solid 1px nth($colores, 4);
 
     .container-enlaces {
         display: flex;
         justify-content: space-between;
 
-
+        .enlaces-footer {
         a {
-            padding: $padding / 8;
-            color: nth($colores, 1);
+            padding: 12.5px;
+            color: nth($colores, 2);
 
             &:hover {
-                color: nth($colores, 5);
+                color: nth($colores, 3);
+                border-bottom: solid 2px nth($colores, 1);
+                padding-bottom: 2px;
             }
         }
+    }
 
         .iconos-redes {
+            padding: 10px;
+            display: flex;
+            gap: 25px;
             align-items: center;
-            padding: $padding / 10;
+            justify-content: space-between;
 
-            a:nth-child(4){
+            a:nth-child(4) {
                 color: #00bb2d;
             }
 
-            a:nth-child(3){
+            a:nth-child(3) {
                 color: #010101;
             }
 
-            a:nth-child(2){
+            a:nth-child(2) {
                 color: #3b5998;
             }
 
             a:nth-child(1) {
                 color: #dd2a7b;
             }
-            
+
             .icon {
                 font-size: 1.5rem;
-                
+
                 &:hover {
                     transform: scale(1.2);
                     transition: 0.7s ease-out;

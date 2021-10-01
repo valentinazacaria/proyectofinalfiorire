@@ -3,12 +3,13 @@
 @import '../base/mixins';
 
 /*Locales*/
+
 .locales {
-    @include disposicion(flex, space-evenly, center);
     background-image: url('../images/locales.jpg');
     background-size: cover;
+    @include disposicion(flex, space-evenly, center);
     margin: 100px;
-    padding: $padding $padding - 100;
+    padding: $padding 0;
 
     iframe {
         border-radius: 10%;
