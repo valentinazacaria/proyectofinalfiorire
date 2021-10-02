@@ -48,10 +48,11 @@
     background-color: nth($colores, 9);
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     width: $ancho;
     font-family: nth($fonts, 2);
     letter-spacing: 1px;
+
 
     /*Logo*/
     img {
@@ -81,6 +82,18 @@
             padding: 5px;
             border-radius: 15px 50px 30px;
         }
+    }
+
+    @media only screen and (max-width: 960px) {
+        display: none;
+    }
+}
+
+.nav-responsive {
+    display: none;
+
+    @media only screen and (max-width: 960px) {
+        display: inline;
     }
 }
 
@@ -121,6 +134,9 @@
             background-color: nth($colores, 1);
             opacity: 0.50;
         }
+    }
+
+    @media only screen and (max-width: 960px) {
+        margin-top: 0;
+    }
 }
-}
-/*Carousel*/
