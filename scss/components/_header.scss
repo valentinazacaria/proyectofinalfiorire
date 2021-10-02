@@ -104,13 +104,31 @@
     margin-top: 6%;
     animation: cuotas 7s infinite;
 
-    p {
+    @media only screen and (max-width: 960px) {
+        margin-top: 0;
+    }
+
+    .cuotas-desktop {
         margin: 0;
         font-family: nth($fonts, 2);
         font-size: 22px;
         letter-spacing: 1px;
-    }
 
+        @media only screen and (max-width: 960px) {
+            display: none;
+        } 
+    }
+    
+    .titulo-responsive {
+        display: none;
+    
+    @media only screen and (max-width: 960px) {
+        font-family: nth($fonts, 2);
+        font-size: 25px;
+        letter-spacing: 1px;
+        display: inline;
+    }    
+}
     @keyframes cuotas {
         0% {
             opacity: 0.50;
@@ -134,9 +152,5 @@
             background-color: nth($colores, 1);
             opacity: 0.50;
         }
-    }
-
-    @media only screen and (max-width: 960px) {
-        margin-top: 0;
     }
 }

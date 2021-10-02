@@ -93,11 +93,32 @@
   margin-top: 6%;
   animation: cuotas 7s infinite;
 }
-.cuotas p {
+@media only screen and (max-width: 960px) {
+  .cuotas {
+    margin-top: 0;
+  }
+}
+.cuotas .cuotas-desktop {
   margin: 0;
   font-family: "Bebas Neue";
   font-size: 22px;
   letter-spacing: 1px;
+}
+@media only screen and (max-width: 960px) {
+  .cuotas .cuotas-desktop {
+    display: none;
+  }
+}
+.cuotas .titulo-responsive {
+  display: none;
+}
+@media only screen and (max-width: 960px) {
+  .cuotas .titulo-responsive {
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    letter-spacing: 1px;
+    display: inline;
+  }
 }
 @keyframes cuotas {
   0% {
@@ -117,11 +138,6 @@
     color: #fedbd7;
     background-color: #520d40;
     opacity: 0.5;
-  }
-}
-@media only screen and (max-width: 960px) {
-  .cuotas {
-    margin-top: 0;
   }
 }
 
