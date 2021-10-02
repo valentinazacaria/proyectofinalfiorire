@@ -49,6 +49,11 @@ a:visited {
     font-size: 30px;
     border: solid 2px nth($colores, 6);
     background-color: nth($colores, 9);
+
+    @media only screen and (max-width: 480px) {
+        margin: 0 60px 0 60px;
+
+}
 }
 
 
@@ -56,5 +61,5 @@ a:visited {
 .section-productos,
 .nuestros-locales,
 .como-comprar {
-    padding-top: 10%;
+    padding-top: 5%;
 }

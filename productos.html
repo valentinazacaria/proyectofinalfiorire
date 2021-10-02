@@ -17,6 +17,9 @@
     <link rel="icon" type="image/png" href="images/icons/favicon.png">
     <!--Icons-->
     <script src="https://kit.fontawesome.com/784f6ff94f.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <title>Fiorire | Nueva Colección</title>
@@ -29,12 +32,48 @@
             <img src="images/logo-index.png" alt="Fiorire, logo de la marca">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="locales.html">Locales</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <img src="images/logo-index.png" alt="Fiorire, logo de la marca">
         </nav>
+        <!--Menu responsive-->
+        <nav class="navbar fixed-bottom navbar-expand-lg navbar-light nav-responsive">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">Locales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Cuotas s/interes + titulo responsive-->
+        <section class="cuotas">
+            <p class="cuotas-desktop">
+                3 Y 6 CUOTAS SIN INTERÉS
+            </p>
+            <h1 class="titulo-responsive">
+                Fiorire
+            </h1>
+        </section>
     </header>
 
     <section class="section-productos">
@@ -43,111 +82,129 @@
     <!--Productos de la tienda-->
     <section class="grid-container-productos">
         <div class="grid-item-producto">
-            <img src="images/grid-container-productos/producto1.jpg" alt="Body con transparencias y flores negras">
-            <div class="button-bag">
-                <h3>Body Gardenia</h3>
-                <p>
-                    $4000
+            <img src="images/grid-container-productos/producto1.jpg" alt="corpiño con aro y flores negras">
+            <div class="name-producto">
+                <h3>Set Gardenia</h3>
+                <div class="button-bag">
+                    <p>
+                        $2590
+                    </p>
                     <button>
                         <i class="fas fa-shopping-bag"></i>
                     </button>
-                </p>
+                </div>
             </div>
         </div>
         <div class="grid-item-producto">
-            <img src="images/grid-container-productos/producto2.jpg" alt="corpiño con aro y flores negras">
-            <div class="button-bag">
-                <h3>Set Gardenia</h3>
-                <p>
-                    $2900
-                </p>
-                <button>
-                    <i class="fas fa-shopping-bag"></i>
-                </button>
+            <img src="images/grid-container-productos/producto2.jpg" alt="Body con transparencias y flores negras">
+            <div class="name-producto">
+                <h3>Body Gardenia</h3>
+                <div class="button-bag">
+                    <p>
+                        $3990
+                    </p>
+                    <button>
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="grid-item-producto">
             <img src="images/grid-container-productos/producto3.jpg" alt="arnes negro">
-            <div class="button-bag">
+            <div class="name-producto">
                 <h3>Arnés Gardenia</h3>
-                <p>
-                    $1900
-                </p>
-                <button>
-                    <i class="fas fa-shopping-bag"></i>
-                </button>
+                <div class="button-bag">
+                    <p>
+                        $2990
+                    </p>
+                    <button>
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="grid-item-producto">
             <img src="images/grid-container-productos/producto4.jpg" alt="corpiño de encaje negro con nude">
-            <div class="button-bag">
+            <div class="name-producto">
                 <h3>Set Orchidea</h3>
-                <p>
-                    $2500
-                </p>
-                <button>
-                    <i class="fas fa-shopping-bag"></i>
-                </button>
+                <div class="button-bag">
+                    <p>
+                        $2690
+                    </p>
+                    <button>
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="grid-item-producto">
             <img src="images/grid-container-productos/producto5.jpg" alt="conjunto negro de puntilla">
-            <div class="button-bag">
+            <div class="name-producto">
                 <h3>Set Giacinto</h3>
-                <p>
-                    $2700
-                </p>
-                <button>
-                    <i class="fas fa-shopping-bag"></i>
-                </button>
+                <div class="button-bag">
+                    <p>
+                        $2690
+                    </p>
+                    <button>
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="grid-item-producto">
             <img src="images/grid-container-productos/producto6.jpg" alt="corpiño azul de puntilla">
-            <div class="button-bag">
+            <div class="name-producto">
                 <h3>Set Ortensia</h3>
-                <p>
-                    $2500
-                </p>
-                <button>
-                    <i class="fas fa-shopping-bag"></i>
-                </button>
+                <div class="button-bag">
+                    <p>
+                        $2490
+                    </p>
+                    <button>
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="grid-item-producto">
             <img src="images/grid-container-productos/producto7.jpg" alt="conjunto rojo de puntilla">
-            <div class="button-bag">
+            <div class="name-producto">
                 <h3>Set Camellia</h3>
-                <p>
-                    $2300
-                </p>
-                <button>
-                    <i class="fas fa-shopping-bag"></i>
-                </button>
+                <div class="button-bag">
+                    <p>
+                        $1990
+                    </p>
+                    <button>
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="grid-item-producto">
             <img src="images/grid-container-productos/producto8.jpg" alt="conjunto de puntilla rojo">
-            <div class="button-bag">
+            <div class="name-producto">
                 <h3>Set Amore</h3>
-                <p>
-                    $2500
-                </p>
-                <button>
-                    <i class="fas fa-shopping-bag"></i>
-                </button>
+                <div class="button-bag">
+                    <p>
+                        $2490
+                    </p>
+                    <button>
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="grid-item-producto">
             <img src="images/grid-container-productos/producto9.jpg" alt="conjunto de puntila rojo">
-            <div class="button-bag">
+            <div class="name-producto">
                 <h3>Set Dalia</h3>
-                <p>
-                    $2300
-                </p>
-                <button>
-                    <i class="fas fa-shopping-bag"></i>
-                </button>
+                <div class="button-bag">
+                    <p>
+                        $2290
+                    </p>
+                    <button>
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -173,6 +230,13 @@
             <p>Copyright Fiorire - 2021. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>

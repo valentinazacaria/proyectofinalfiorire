@@ -5,14 +5,20 @@
     margin: 8% 20%;
     font-family: nth($fonts, 2);
 
+    h2 {
+        color: nth($colores, 2);
+        background-color: rgba(212,178,211,1);
+        border: dotted 2px nth($colores, 2);
+    }
+
+
     .container-form {
         margin: 80px auto;
-        background-image: url('../images/contactoimg.jpg');
-        background-size: cover;
+        background: linear-gradient(90deg, rgba(226,176,206,1) 25%, rgba(212,178,211,1) 44%, rgba(189,181,219,1) 78%, rgba(189,181,219,1) 91%);
+        border: dotted 2px nth($colores, 2);
 
         label {
-            background-color: #fedbd7;
-            color: nth($colores, 3);
+            color: nth($colores, 2);
         }
     }
 
@@ -21,21 +27,20 @@
     }
 
     button {
-        background-color: #fedbd7;
-        color: nth($colores, 3);
+        color: nth($colores, 2);
 
         &:hover {
-            background-color: nth($colores, 3);
-            color: rgba(254, 219, 215);
+            background-color: nth($colores, 1);
+            color: nth($colores, 8);
         }
     }
 
     .modal-body {
-        color: nth($colores, 3);
+        color: nth($colores, 1);
     }
 
     .modal-header {
-        color: nth($colores, 3);
+        color: nth($colores, 1);
     }
 
 }

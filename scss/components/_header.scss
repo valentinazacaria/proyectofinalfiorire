@@ -56,7 +56,7 @@
 
     /*Logo*/
     img {
-        width: $ancho - 88;
+        width: 12%;
     }
 
     ul {
@@ -92,8 +92,12 @@
 .nav-responsive {
     display: none;
 
+    
+    
     @media only screen and (max-width: 960px) {
         display: inline;
+        background-color: nth($colores, 10);
+        font-family: nth($fonts, 2);
     }
 }
 

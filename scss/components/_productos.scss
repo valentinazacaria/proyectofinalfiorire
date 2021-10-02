@@ -3,74 +3,81 @@
 @import '../base/mixins';
 /*Productos*/
 
-$producto: (
-    shadow-fija: 7px 9px 5px -3px rgba(214, 133, 141, 0.51),
+$producto: (shadow-fija: 7px 9px 5px -3px rgba(214, 133, 141, 0.51),
     shadow-hover: 7px 9px 5px -3px rgba(124, 82, 86, 0.51),
     hover: 0.85,
-    name-producto: nth($colores, 2)
-);
+    name-producto: nth($colores, 2));
 
 
 .grid-container-productos {
-    margin: 100px 200px;
+    margin: 90px 120px 20px 120px;
     width: auto;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 0 30px;
     letter-spacing: 1px;
-    
-    
+
+
     .grid-item-producto {
         background-color: nth($colores, 9);
         box-shadow: map-get($producto, shadow-fija);
         padding-bottom: 50px;
         border-radius: 3%;
-        height: 70%;
-        
+        height: 75%;
+
         &:hover {
             box-shadow: map-get($producto, shadow-hover);
         }
-        
+
         img {
             width: $ancho;
-            height: 75%;
+            height: 90%;
             object-fit: cover;
             border-radius: 3% 3% 0 0;
         }
 
-        .button-bag {
+        .name-producto {
             @include disposicion(flex, center, center);
             flex-direction: column;
+            font-family: nth($fonts, 2);
+            color: map-get($producto, name-producto);
 
             h3 {
-                color: map-get($producto, name-producto);
-                padding-top: 15px;
+                padding-top: 10px;
+                font-size: 20px;
             }
 
-            p {
-                padding-top: $padding / 5;
-                color: map-get($producto, name-producto);
-                font-weight: bold;
-            }
+            .button-bag {
+                display: flex;
+                align-items: flex-end;
+                flex-direction: row-reverse;
 
-            button {
-                color: nth($colores, 1);
-                background-color: transparent;
-                margin: 10px;
-                padding: 6px;
-                border: none;
-                font-size: 17px;
-
-                &:active {
-                    color: nth($colores, 4);
+                p {
+                    font-size: 18px;
+                    margin-bottom: 7px;
                 }
+
+                button {
+                    color: nth($colores, 1);
+                    background-color: transparent;
+                    margin: 10px;
+                    border: none;
+
+                    &:active {
+                        color: nth($colores, 4);
+                    }
+                }
+
             }
         }
 
         @media only screen and (max-width: 960px) {
-            padding-bottom: 25px;
+            padding-bottom: 20px;
         }
+        @media only screen and (max-width: 480px) {
+            padding-bottom: 50px;
+    }
     }
 
     @media only screen and (max-width: 960px) {
@@ -80,4 +87,5 @@ $producto: (
         gap: 80px;
 
     }
+
 }
