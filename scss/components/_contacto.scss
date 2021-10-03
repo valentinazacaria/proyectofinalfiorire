@@ -7,14 +7,14 @@
 
     h2 {
         color: nth($colores, 2);
-        background-color: rgba(212, 178, 211, 1);
+        background-color: nth($colores, 8);
         border: solid 2px nth($colores, 2);
     }
 
 
     .container-form {
         margin: 80px auto;
-        background-color: rgba(212, 178, 211, 1);
+        background-color: nth($colores, 8);
         border: solid 2px nth($colores, 2);
 
         label {

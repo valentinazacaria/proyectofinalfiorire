@@ -10,7 +10,7 @@
     text-align: end;
     font-family: nth($fonts, 2);
     letter-spacing: 1px;
-    padding: 50px;
+    padding: 50px 50px 0 50px;
     border-top: solid 1px nth($colores, 4);
 
     .container-enlaces {
@@ -18,17 +18,22 @@
         justify-content: space-between;
 
         .enlaces-footer {
-        a {
-            padding: 12.5px;
-            color: nth($colores, 2);
+            a {
+                padding: 12.5px;
+                color: nth($colores, 2);
 
-            &:hover {
-                color: nth($colores, 3);
-                border-bottom: solid 2px nth($colores, 1);
-                padding-bottom: 2px;
+                &:hover {
+                    color: nth($colores, 3);
+                    border-bottom: solid 2px nth($colores, 1);
+                    padding-bottom: 2px;
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
+                display: flex;
+                justify-content: center;
             }
         }
-    }
 
         .iconos-redes {
             padding: 10px;
@@ -61,6 +66,29 @@
                     transition: 0.7s ease-out;
                 }
             }
+
+            @media only screen and (max-width: 768px) {
+                justify-content: center;
+            }
         }
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+        }
+
     }
+
+    .copyright {
+        color: nth($colores, 1);
+        font-family: nth($fonts, 4);
+        font-size: 12px;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 960px) {
+        padding: 50px;
+    }
+
 }

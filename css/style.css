@@ -164,7 +164,7 @@
   text-align: end;
   font-family: "Bebas Neue";
   letter-spacing: 1px;
-  padding: 50px;
+  padding: 50px 50px 0 50px;
   border-top: solid 1px #CC6670;
 }
 .footer .container-enlaces {
@@ -179,6 +179,12 @@
   color: #b23a48;
   border-bottom: solid 2px #520d40;
   padding-bottom: 2px;
+}
+@media only screen and (max-width: 768px) {
+  .footer .container-enlaces .enlaces-footer {
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer .container-enlaces .iconos-redes {
   padding: 10px;
@@ -205,6 +211,29 @@
 .footer .container-enlaces .iconos-redes .icon:hover {
   transform: scale(1.2);
   transition: 0.7s ease-out;
+}
+@media only screen and (max-width: 768px) {
+  .footer .container-enlaces .iconos-redes {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer .container-enlaces {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+.footer .copyright {
+  color: #520d40;
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-align: center;
+}
+@media only screen and (max-width: 960px) {
+  .footer {
+    padding: 50px;
+  }
 }
 
 /* Productos Destacados */
@@ -339,6 +368,18 @@
 }
 
 /*Productos*/
+.cart {
+  font-size: 20px;
+  text-align: right;
+  padding: 5px 50px 0 0;
+  color: #520d40c5;
+  background-color: rgba(254, 219, 215, 0.8);
+  border-bottom: solid 1px #dd9aa0;
+}
+.cart:hover {
+  color: #CC6670;
+}
+
 .grid-container-productos {
   margin: 90px 120px 20px 120px;
   width: auto;
@@ -420,12 +461,12 @@
 }
 .contacto h2 {
   color: #520d40c5;
-  background-color: #d4b2d3;
+  background-color: #fedbd7;
   border: solid 2px #520d40c5;
 }
 .contacto .container-form {
   margin: 80px auto;
-  background-color: #d4b2d3;
+  background-color: #fedbd7;
   border: solid 2px #520d40c5;
 }
 .contacto .container-form label {
