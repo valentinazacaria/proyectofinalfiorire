@@ -126,6 +126,7 @@
 }
 .cuotas .titulo-responsive {
   display: none;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 960px) {
   .cuotas .titulo-responsive {
@@ -303,6 +304,51 @@
   color: #CC6670;
 }
 
+/*Cuotas en destacados*/
+.cuotas-productos {
+  color: #fedbd7;
+  background-color: #520d40;
+  text-align: center;
+  animation: cuotas 7s infinite;
+}
+@media only screen and (max-width: 960px) {
+  .cuotas-productos {
+    margin-top: 0;
+  }
+}
+.cuotas-productos .cuotas-responsive {
+  display: none;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 960px) {
+  .cuotas-productos .cuotas-responsive {
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    letter-spacing: 1px;
+    display: inline;
+  }
+}
+@keyframes cuotas {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    background-color: #CC6670;
+    opacity: 1.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    color: #fedbd7;
+    background-color: #520d40;
+    opacity: 0.5;
+  }
+}
+
 /* Sobre Nosotros */
 #nosotros {
   display: flex;
@@ -460,8 +506,8 @@
   font-family: "Bebas Neue";
 }
 .contacto h2 {
-  color: #520d40c5;
-  background-color: #fedbd7;
+  color: #fedbd7;
+  background-color: #520d40c5;
   border: solid 2px #520d40c5;
 }
 .contacto .container-form {
@@ -470,7 +516,7 @@
   border: solid 2px #520d40c5;
 }
 .contacto .container-form label {
-  color: #520d40c5;
+  color: #520d40;
 }
 .contacto textarea {
   resize: none;

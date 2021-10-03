@@ -144,6 +144,7 @@
 
     .titulo-responsive {
         display: none;
+        margin-bottom: 0;
 
         @media only screen and (max-width: 960px) {
             font-family: nth($fonts, 2);

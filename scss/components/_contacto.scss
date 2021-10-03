@@ -6,8 +6,8 @@
     font-family: nth($fonts, 2);
 
     h2 {
-        color: nth($colores, 2);
-        background-color: nth($colores, 8);
+        color: nth($colores, 8);
+        background-color: nth($colores, 2);
         border: solid 2px nth($colores, 2);
     }
 
@@ -17,8 +17,9 @@
         background-color: nth($colores, 8);
         border: solid 2px nth($colores, 2);
 
+
         label {
-            color: nth($colores, 2);
+            color: nth($colores, 1);
         }
     }
 
