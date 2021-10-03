@@ -8,7 +8,7 @@
     background-image: url('../images/locales.jpg');
     background-size: cover;
     @include disposicion(flex, space-evenly, center);
-    margin: 100px;
+    margin: 50px;
     padding: $padding 0;
 
     iframe {
@@ -19,7 +19,11 @@
             opacity: 1;
         }
 
-        @media only screen and (max-width: 960px) {
+        @media only screen and (max-width: 768px) {
+            padding: 50px;
+        }
+
+        @media only screen and (max-width: 480px) {
             display: none;
         }
     }
@@ -28,7 +32,7 @@
         display: flex;
         flex-direction: column;
         gap: 75px;
-        padding: $padding / 5;
+        padding: 20px;
 
         .direccion1 {
             background-color: nth($colores, 10);
@@ -44,6 +48,7 @@
 
     @media only screen and (max-width: 960px) {
         flex-direction: column;
+        background-color: nth($colores, 8);
     }
 
 }

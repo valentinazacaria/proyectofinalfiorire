@@ -79,12 +79,25 @@
 
 .nav-responsive {
   display: none;
+  background-color: rgba(254, 219, 215, 0.8);
+  font-family: "Bebas Neue";
+}
+.nav-responsive .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.15rem #CC6670;
+}
+.nav-responsive .heart {
+  color: #520d40c5;
+}
+.nav-responsive .nav-link {
+  color: #520d40c5 !important;
+}
+.nav-responsive .nav-link:hover {
+  color: #CC6670 !important;
+  border-bottom: solid 2px #520d40c5;
 }
 @media only screen and (max-width: 960px) {
   .nav-responsive {
     display: inline;
-    background-color: rgba(254, 219, 215, 0.8);
-    font-family: "Bebas Neue";
   }
 }
 
@@ -199,7 +212,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 80px 80px 0 80px;
+  margin: 80px 60px 0 80px;
 }
 .section-destacados h2 {
   margin: 0;
@@ -245,7 +258,23 @@
   }
 }
 
-/* Nosotros */
+/*Icono de volver a inicio*/
+.volver-icon {
+  font-size: 20px;
+  text-align: right;
+  margin-right: 20px;
+  position: sticky;
+  top: 65%;
+}
+.volver-icon i {
+  color: #520d40c5;
+  opacity: 0.8;
+}
+.volver-icon i:hover {
+  color: #CC6670;
+}
+
+/* Sobre Nosotros */
 #nosotros {
   display: flex;
   flex-direction: column;
@@ -254,24 +283,58 @@
 #nosotros .container-nosotros {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 80px;
-  padding: 25px 0;
-  gap: 50px;
+  margin: 70px 20px;
 }
 #nosotros .container-nosotros img {
-  width: 25%;
+  width: 50%;
+}
+@media only screen and (max-width: 960px) {
+  #nosotros .container-nosotros img {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #nosotros .container-nosotros img {
+    width: 100%;
+  }
 }
 #nosotros .container-nosotros .parrafo-nosotros {
-  color: #b23a48;
-  text-align: center;
+  color: #520d40;
+  background-color: rgba(254, 219, 215, 0.5);
   width: 40%;
+  text-align: center;
   font-style: oblique;
+}
+@media only screen and (min-width: 960px) {
+  #nosotros .container-nosotros .parrafo-nosotros {
+    position: absolute;
+    z-index: 3;
+    margin-top: 20%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  #nosotros .container-nosotros .parrafo-nosotros {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #520d40c5;
+    color: #fedbd7;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #nosotros .container-nosotros .parrafo-nosotros {
+    margin: 20px auto;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 960px) {
   #nosotros .container-nosotros {
+    margin: 60px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #nosotros .container-nosotros {
     flex-direction: column;
-    margin: 0 auto;
   }
 }
 
@@ -352,18 +415,18 @@
 
 /* Contacto Formulario + Modal */
 .contacto {
-  margin: 8% 20%;
+  margin: 8% 10%;
   font-family: "Bebas Neue";
 }
 .contacto h2 {
   color: #520d40c5;
   background-color: #d4b2d3;
-  border: dotted 2px #520d40c5;
+  border: solid 2px #520d40c5;
 }
 .contacto .container-form {
   margin: 80px auto;
-  background: linear-gradient(90deg, #e2b0ce 25%, #d4b2d3 44%, #bdb5db 78%, #bdb5db 91%);
-  border: dotted 2px #520d40c5;
+  background-color: #d4b2d3;
+  border: solid 2px #520d40c5;
 }
 .contacto .container-form label {
   color: #520d40c5;
@@ -392,7 +455,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 100px;
+  margin: 50px;
   padding: 100px 0;
 }
 .locales iframe {
@@ -402,7 +465,12 @@
 .locales iframe:hover {
   opacity: 1;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 768px) {
+  .locales iframe {
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
   .locales iframe {
     display: none;
   }
@@ -425,39 +493,99 @@
 @media only screen and (max-width: 960px) {
   .locales {
     flex-direction: column;
+    background-color: #fedbd7;
   }
 }
 
 /*Como Comprar*/
+/*Envios, Retiros y Medios de Pago*/
 .como-comprar {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 80px 100px;
+  align-items: start;
+  margin: 80px 100px 50px 100px;
   padding: 100px;
   gap: 10%;
   text-align: center;
 }
-.como-comprar p {
-  color: #CC6670;
-}
-.como-comprar h2 {
-  color: #b23a48;
-}
 .como-comprar .envios {
-  text-align: start;
   color: #CC6670;
+}
+.como-comprar .envios h2 {
+  margin: 0 auto;
+  width: 90%;
+}
+.como-comprar .envios p {
+  color: #520d40;
+  margin: 20px 0;
+  width: 70%;
+  padding-left: 25px;
+  text-align: start;
 }
 .como-comprar .envios i {
   font-size: 20px;
+  color: #CC6670;
+}
+.como-comprar .envios i:hover {
   color: #520d40;
+}
+.como-comprar .envios img {
+  text-align: center;
+  width: 70%;
+  border-radius: 2%;
+  border: solid 2px #d6858d;
+}
+.como-comprar .envios img:hover {
+  border: solid 2px #520d40c5;
+}
+.como-comprar .envios .retiro {
+  margin-top: 30px;
+}
+.como-comprar .medios-pago {
+  margin-top: 0;
+}
+.como-comprar .medios-pago h2 {
+  width: 90%;
+  margin: 0 auto;
+}
+.como-comprar .medios-pago .detalles-pago {
+  margin: 20px 0px;
+  padding: 10px 10px 10px 20px;
+  text-align: start;
+}
+.como-comprar .medios-pago .detalles-pago p {
+  color: #520d40;
+}
+.como-comprar .medios-pago .detalles-pago i {
+  color: #CC6670;
+}
+.como-comprar .medios-pago .detalles-pago i:hover {
+  color: #520d40;
+}
+.como-comprar .medios-pago img {
+  width: 80%;
+  border-radius: 2%;
+  border: solid 2px #520d40c5;
+}
+.como-comprar .medios-pago img:hover {
+  border: solid 2px #d6858d;
 }
 .como-comprar .icon-pay {
   font-size: 40px;
 }
+.como-comprar .icon-pay i:hover {
+  color: #CC6670;
+}
 @media only screen and (max-width: 960px) {
   .como-comprar {
     flex-direction: column;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .como-comprar {
+    padding: 0;
+    margin: 40px 30px 50px 30px;
   }
 }
 

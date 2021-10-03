@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 80px 80px 0 80px;
+    margin: 80px 60px 0 80px;
 
     h2 {
         margin: 0;
@@ -52,6 +52,25 @@
 
         @media only screen and (max-width: 960px) {
             flex-direction: column;
+        }
+    }
+}
+
+/*Icono de volver a inicio*/
+
+.volver-icon {
+    font-size: 20px;
+    text-align: right;
+    margin-right: 20px;
+    position: sticky;
+    top: 65%;
+
+    i {
+        color: nth($colores, 2);
+        opacity: 0.8;
+
+        &:hover {
+            color: nth($colores, 4);
         }
     }
 }

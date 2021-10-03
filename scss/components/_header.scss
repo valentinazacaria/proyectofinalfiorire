@@ -91,13 +91,32 @@
 
 .nav-responsive {
     display: none;
+    background-color: nth($colores, 10);
+    font-family: nth($fonts, 2);
 
-    
-    
+    .navbar-toggler {
+
+        &:focus {
+            box-shadow: 0 0 0 .15rem nth($colores, 4);
+        }
+    }
+
+    .heart {
+        color: nth($colores, 2);
+    }
+
+    .nav-link {
+        color: nth($colores, 2) !important;
+
+        &:hover {
+            color: nth($colores, 4) !important;
+            border-bottom: solid 2px nth($colores, 2);
+        }
+    }
+
+
     @media only screen and (max-width: 960px) {
         display: inline;
-        background-color: nth($colores, 10);
-        font-family: nth($fonts, 2);
     }
 }
 
@@ -120,19 +139,20 @@
 
         @media only screen and (max-width: 960px) {
             display: none;
-        } 
+        }
     }
-    
+
     .titulo-responsive {
         display: none;
-    
-    @media only screen and (max-width: 960px) {
-        font-family: nth($fonts, 2);
-        font-size: 25px;
-        letter-spacing: 1px;
-        display: inline;
-    }    
-}
+
+        @media only screen and (max-width: 960px) {
+            font-family: nth($fonts, 2);
+            font-size: 25px;
+            letter-spacing: 1px;
+            display: inline;
+        }
+    }
+
     @keyframes cuotas {
         0% {
             opacity: 0.50;

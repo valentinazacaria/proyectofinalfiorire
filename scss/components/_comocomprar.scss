@@ -4,36 +4,115 @@
 
 /*Como Comprar*/
 
+/*Envios, Retiros y Medios de Pago*/
+
 .como-comprar {
-    @include disposicion(flex, center, center);
-    margin: 80px 100px;
+    @include disposicion(flex, center, start);
+    margin: 80px 100px 50px 100px;
     padding: $padding;
     gap: 10%;
     text-align: center;
 
-    p {
-        color: nth($colores, 4);
-    }
-
-    h2 {
-        color: nth($colores, 3);
-    }
-
     .envios {
-        text-align: start;
         color: nth($colores, 4);
+
+        h2 {
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        p {
+            color: nth($colores, 1);
+            margin: 20px 0;
+            width: 70%;
+            padding-left: 25px;
+            text-align: start;
+        }
 
         i {
             font-size: 20px;
-            color: nth($colores, 1);
+            color: nth($colores, 4);
+
+            &:hover {
+                color: nth($colores, 1);
+            }
         }
+
+        img {
+            text-align: center;
+            width: 70%;
+            border-radius: 2%;
+            border: solid 2px nth($colores, 5);
+
+            &:hover {
+                border: solid 2px nth($colores, 2);
+            }
+        }
+
+        .retiro {
+            margin-top: 30px;
+        }
+
+    }
+
+    .medios-pago {
+        margin-top: 0;
+
+        h2 {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .detalles-pago {
+            margin: 20px 0px;
+            padding: 10px 10px 10px 20px;
+            text-align: start;
+
+            p {
+                color: nth($colores, 1);
+            }
+
+            i {
+                color: nth($colores, 4);
+
+                &:hover {
+                    color: nth($colores, 1);
+                }
+            }
+        }
+
+        img {
+            width: 80%;
+            border-radius: 2%;
+            border: solid 2px nth($colores, 2);
+
+
+            &:hover {
+                border: solid 2px nth($colores, 5);
+            }
+
+        }
+
     }
 
     .icon-pay {
         font-size: 40px;
+
+        i {
+            &:hover {
+                color: nth($colores, 4);
+            }
+        }
     }
 
     @media only screen and (max-width: 960px) {
         flex-direction: column;
+        padding: 20px;
     }
+
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+        margin: 40px 30px 50px 30px;
+    }
+
 }

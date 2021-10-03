@@ -1,6 +1,6 @@
 @import '../base/mixins';
 
-/* Nosotros */
+/* Sobre Nosotros */
 
 #nosotros {
     display: flex;
@@ -8,25 +8,58 @@
     padding-top: 6%;
 
     .container-nosotros {
-        @include disposicion(flex, center, center);
-        margin: 80px;
-        padding: 25px 0;
-        gap: 50px;
+        display: flex;
+        justify-content: center;
+        margin: 70px 20px;
 
         img {
-            width: 25%;
+            width: 50%;
+
+            @media only screen and (max-width: 960px) {
+                width: 70%;
+            }
+
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+
         }
 
         .parrafo-nosotros {
-            color: nth($colores, 3);
-            text-align: center;
+            color: nth($colores, 1);
+            background-color: nth($colores, 9);
             width: 40%;
+            text-align: center;
             font-style: oblique;
+
+
+            @media only screen and (min-width: 960px) {
+                position: absolute;
+                z-index: 3;
+                margin-top: 20%;
+            }
+
+            @media only screen and (max-width: 960px) {
+                margin: 20px;
+                display: flex;
+                align-items: center;
+                background-color: nth($colores, 2);
+                color: nth($colores, 8);
+            }
+
+            @media only screen and (max-width: 768px) {
+                margin: 20px auto;
+                width: 100%;
+            }
+
         }
 
         @media only screen and (max-width: 960px) {
+            margin: 60px;
+        }
+
+        @media only screen and (max-width: 768px) {
             flex-direction: column;
-            margin: 0 auto;
         }
     }
 }
